@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>지축역아테라 하자 합의서 체결 안내</title>
+<meta name="description" content="금호건설과의 하자 합의서 내용, 달라진 점, 앞으로 진행될 공사를 한 장씩 넘겨 보며 확인하세요.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="지축역아테라 하자 합의서 체결 안내">
+<meta property="og:description" content="합의서 내용과 앞으로 진행될 공사를 한 장씩 넘겨 보며 확인하세요.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+:root{
+  --navy:#14304F; --blue:#2E6DB5; --sky:#EAF2FB; --bg:#F3F5F8; --card:#fff; --text:#1F2933; --muted:#5B6775; --line:#E3E8EE;
+  --teal:#0E8A7D; --tealbg:#E4F4F1; --amber:#A85F00; --amberbg:#FFF1D6; --bluebg:#E3EEFB;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{font-family:'Noto Sans KR',system-ui,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:var(--bg);color:var(--text);
+  display:flex;flex-direction:column;height:100dvh;overflow:hidden;-webkit-text-size-adjust:100%;line-height:1.55;font-size:15px;word-break:keep-all;overflow-wrap:break-word}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
+small{font-size:12.5px;color:var(--muted);font-weight:400}
+.topbar{flex:none;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:10px 16px;font-size:12.5px;font-weight:500}
+.topbar #counter{opacity:.85;font-variant-numeric:tabular-nums}
+.progress{flex:none;height:3px;background:#dfe6ee}
+.progress i{display:block;height:100%;width:0;background:var(--blue);transition:width .25s}
+
+#pager{flex:1;min-height:0;display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+#pager::-webkit-scrollbar{display:none}
+.slide{flex:0 0 100%;width:100%;scroll-snap-align:start;scroll-snap-stop:always;overflow-y:auto;overscroll-behavior:contain;padding:22px 16px 28px}
+.inner{max-width:560px;margin:0 auto}
+
+.kicker{font-size:12.5px;font-weight:700;color:var(--blue);letter-spacing:.2px;margin-bottom:4px}
+h2{font-size:22px;line-height:1.35;font-weight:900;color:var(--navy);margin-bottom:8px;letter-spacing:-.3px}
+.lead{font-size:14.5px;color:var(--muted);margin-bottom:14px}
+
+/* 표지 */
+.hero{background:linear-gradient(135deg,#1a3f72,#2d6db5);color:#fff;border-radius:20px;padding:26px 22px 24px;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;right:-40px;bottom:-50px;width:170px;height:170px;border-radius:50%;background:rgba(255,255,255,.08)}
+.hero-k{display:inline-block;font-size:12px;font-weight:700;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:4px 12px;margin-bottom:16px}
+.hero h1{font-size:27px;line-height:1.34;font-weight:900;letter-spacing:-.5px;margin-bottom:12px}
+.hero h1 em{font-style:normal;color:#9FD6F5}
+.hero p{font-size:14px;line-height:1.65;color:rgba(255,255,255,.82);position:relative;z-index:1}
+.facts3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}
+.facts3 div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 8px;text-align:center}
+.facts3 b{display:block;font-size:15.5px;color:var(--navy);font-weight:900}
+.facts3 span{font-size:12px;color:var(--muted)}
+.cover-links{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px}
+.mini{font-size:13px;color:var(--muted);margin-bottom:10px}
+.linkrow{display:flex;gap:8px;margin-bottom:12px}
+.linkrow a{flex:1;text-align:center;font-size:13.5px;font-weight:700;color:var(--blue);background:var(--sky);border-radius:10px;padding:10px 6px;text-decoration:none}
+.swipehint{text-align:center;font-size:12.5px;color:var(--muted);margin-top:14px}
+
+/* 비교 카드 */
+.cmp{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:10px}
+.cmp-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.cmp-h b{font-size:16px;color:var(--navy);font-weight:900}
+.tag{font-size:11.5px;font-weight:700;border-radius:999px;padding:3px 10px}
+.tag.amber{background:var(--amberbg);color:var(--amber)} .tag.teal{background:var(--tealbg);color:var(--teal)} .tag.blue{background:var(--bluebg);color:var(--blue)}
+.cmp-b{display:grid;grid-template-columns:1fr 18px 1.15fr;gap:6px;align-items:stretch}
+.before,.after{border-radius:12px;padding:10px 11px;font-size:13.5px;line-height:1.55}
+.before{background:#F4F6F9;color:#4a5562}
+.after{background:var(--sky);color:var(--navy);font-weight:500}
+.before em,.after em{display:block;font-style:normal;font-size:11px;font-weight:700;margin-bottom:3px;opacity:.7;letter-spacing:.2px}
+.arrow{display:flex;align-items:center;justify-content:center;color:var(--blue);font-size:22px;font-weight:700}
+.cnote{font-size:12.5px;color:var(--muted);margin:8px 2px 10px}
+.cmp .cnote{margin:8px 2px 0}
+.same{background:var(--tealbg);color:var(--teal);border-radius:12px;padding:11px 14px;font-size:13.5px;margin-top:4px}
+.same b{margin-right:8px}
+
+/* kv */
+.kv{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:12px}
+.kv div{display:grid;grid-template-columns:86px 1fr;gap:10px;padding:11px 14px;border-bottom:1px solid var(--line);font-size:14px}
+.kv div:last-child{border-bottom:0}
+.kv dt{font-weight:700;color:var(--navy);font-size:13.5px}
+.kv dd{color:var(--text)}
+
+/* 공사 카드 */
+.wgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.wcard{text-align:left;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 12px 13px;display:flex;flex-direction:column;gap:2px;transition:transform .1s}
+.wcard:active{transform:scale(.98);background:var(--sky)}
+.wcard i{font-style:normal;font-size:11.5px;font-weight:700;color:var(--blue)}
+.wcard b{font-size:14.5px;color:var(--navy);line-height:1.35;font-weight:700}
+.wcard span{font-size:12.5px;color:var(--muted)}
+.wcard:last-child{grid-column:span 2}
+.callout{background:var(--sky);color:var(--navy);border-radius:14px;padding:13px 15px;font-size:14px;margin:4px 0 12px}
+.callout b{color:var(--blue)}
+
+/* 수치 */
+.stats{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:8px;margin:2px 0 12px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 6px;text-align:center}
+.stat b{display:block;font-size:22px;font-weight:900;color:var(--blue);line-height:1.2}
+.stat span{display:block;font-size:12px;color:var(--muted);margin-top:2px;line-height:1.35}
+
+/* 표 */
+.tbl{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:14px;margin-bottom:10px}
+.tbl td,.tbl th{padding:8px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+.tbl td:last-child{text-align:right;font-weight:700;color:var(--navy);white-space:nowrap}
+.tbl tbody tr:last-child td{border-bottom:0}
+.tbl tfoot td{background:var(--sky);font-weight:900;color:var(--navy);border-top:1px solid var(--line);border-bottom:0}
+
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.chips span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px;color:var(--navy)}
+
+.fig{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:12px}
+.fig img{display:block;width:100%;height:auto;max-height:min(24dvh,220px);object-fit:contain;background:#fff;cursor:zoom-in}
+.fig figcaption{padding:8px 12px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--line)}
+.fig figcaption i{font-style:normal;opacity:.7}
+.thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.thumbs img{width:100%;height:100px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:12px;cursor:zoom-in}
+
+/* 버튼 */
+.btnrow{display:flex;flex-direction:column;gap:8px;margin-top:6px}
+.btn,.doc{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--card);border:1.5px solid var(--blue);color:var(--blue);border-radius:12px;padding:13px 14px;font-size:14.5px;font-weight:700;text-decoration:none;text-align:center}
+.btn.primary,.doc.primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+.btn:active,.doc:active{filter:brightness(.95)}
+
+/* 95% */
+.big95{background:linear-gradient(135deg,#1a3f72,#2d6db5);color:#fff;border-radius:20px;text-align:center;padding:22px 16px;margin-bottom:12px}
+.big95 b{font-size:64px;font-weight:900;line-height:1;letter-spacing:-2px}
+.big95 b small{font-size:30px;color:#fff;margin-left:2px}
+.big95 span{display:block;font-size:18px;font-weight:700;margin:4px 0 10px}
+.big95 p{font-size:14px;color:rgba(255,255,255,.88)}
+.steps{list-style:none;counter-reset:s;margin-bottom:6px}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px 12px 50px;margin-bottom:8px;position:relative;font-size:14px;color:var(--text)}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.steps li b{display:block;color:var(--navy);font-size:14.5px;margin-bottom:1px}
+
+/* 타임라인 */
+.tl{list-style:none;position:relative;margin:4px 0 8px}
+.tl::before{content:'';position:absolute;left:15px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl li{display:flex;gap:12px;padding:0 0 14px;position:relative}
+.tl li i{flex:none;width:32px;height:32px;border-radius:50%;background:var(--card);border:2px solid var(--blue);color:var(--blue);font-style:normal;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;z-index:1}
+.tl li.done i{background:var(--blue);color:#fff}
+.tl li div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 13px;flex:1}
+.tl li b{display:block;font-size:14.5px;color:var(--navy)}
+.tl li span{font-size:13.5px;color:var(--muted)}
+
+.rules{list-style:none;margin-bottom:12px}
+.rules li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:11px 14px;margin-bottom:8px;font-size:14px;position:relative}
+.rules li b{display:block;color:var(--navy);font-size:14.5px;margin-bottom:2px}
+.rules li em{position:absolute;right:12px;top:11px;font-style:normal;font-size:11.5px;font-weight:700;color:var(--blue);background:var(--sky);border-radius:999px;padding:2px 9px}
+
+.docs{display:flex;flex-direction:column;gap:8px;margin-bottom:10px}
+.doc{flex-direction:column;align-items:flex-start;text-align:left;gap:2px;padding:14px 16px}
+.doc b{font-size:15.5px}
+.doc span{font-size:12.5px;font-weight:400;opacity:.85}
+.foot{margin-top:18px;text-align:center;font-size:13px;color:var(--muted);line-height:1.8}
+.foot b{display:block;color:var(--navy);font-size:14px}
+
+/* 하단 네비 */
+.bottom{flex:none;display:flex;gap:8px;align-items:center;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line)}
+.nb{padding:12px 14px;border-radius:12px;background:var(--bg);font-weight:700;font-size:14.5px;color:var(--navy);min-width:84px}
+.nb.primary{background:var(--blue);color:#fff}
+.nb.toc{flex:1;min-width:0;display:flex;gap:6px;justify-content:center;align-items:center;white-space:nowrap;overflow:hidden}
+.nb.toc span{overflow:hidden;text-overflow:ellipsis;font-weight:500;font-size:13.5px}
+.nb:disabled{opacity:.35}
+
+/* 목차 시트 */
+.sheet{position:fixed;inset:0;background:rgba(20,48,79,.45);z-index:30;display:flex;align-items:flex-end;justify-content:center}
+.sheet[hidden],.viewer[hidden],.lb[hidden]{display:none}
+.sheet-card{background:#fff;border-radius:20px 20px 0 0;width:100%;max-width:560px;max-height:78dvh;overflow-y:auto;padding:16px 16px calc(16px + env(safe-area-inset-bottom))}
+.sheet-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;color:var(--navy);font-size:16px}
+.x{font-size:13.5px;font-weight:700;color:var(--blue);padding:6px 10px;text-decoration:none}
+#toclist{list-style:none}
+#toclist li{border-bottom:1px solid var(--line)}
+#toclist button{width:100%;text-align:left;padding:12px 4px;font-size:14.5px;display:flex;gap:10px}
+#toclist button i{font-style:normal;width:24px;color:var(--blue);font-weight:700}
+#toclist .on button{color:var(--blue);font-weight:700}
+
+/* PDF 뷰어 */
+.viewer{position:fixed;inset:0;z-index:40;background:#e9edf2;display:flex;flex-direction:column}
+.v-top{flex:none;display:flex;align-items:center;justify-content:space-between;gap:8px;background:var(--navy);color:#fff;padding:8px 10px}
+.v-top b{font-size:14px;flex:1;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.v-top .x{color:#fff}
+.v-tools{flex:none;display:flex;align-items:center;justify-content:center;gap:8px;background:#fff;border-bottom:1px solid var(--line);padding:6px 10px;font-size:14px}
+.v-tools button{width:38px;height:34px;border-radius:9px;background:var(--bg);font-size:18px;font-weight:700;color:var(--navy)}
+.v-tools i{flex:0 0 12px}
+.v-tools input{width:48px;text-align:center;border:1px solid var(--line);border-radius:8px;padding:5px;font:inherit}
+.v-body{position:relative;flex:1;overflow:auto;padding:10px;-webkit-overflow-scrolling:touch;--z:1}
+.vp{background:#fff;margin:0 auto 10px;width:calc(100% * var(--z));box-shadow:0 1px 6px rgba(0,0,0,.18);position:relative}
+.vp canvas{display:block;width:100%;height:100%}
+.vp .num{position:absolute;left:6px;top:4px;font-size:11px;color:#8a95a3}
+.loading{padding:40px;text-align:center;color:var(--muted)}
+
+/* 이미지 확대 */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(10,20,34,.92);display:flex;flex-direction:column}
+.lb .x{align-self:flex-end;color:#fff;padding:12px 16px}
+.lb-scroll{flex:1;overflow:auto;display:flex;align-items:flex-start;justify-content:center;-webkit-overflow-scrolling:touch}
+.lb img{max-width:100%;max-height:100%;margin:auto;cursor:zoom-in;background:#fff}
+.lb.zoom img{max-width:none;max-height:none;width:240%;cursor:zoom-out}
+.lb p{text-align:center;color:#b8c4d4;font-size:12px;padding:8px}
+
+@media (min-width:700px){
+  h2{font-size:25px}
+  .slide{padding-top:34px}
+}
+@media (max-width:360px){
+  .cmp-b{grid-template-columns:1fr;gap:6px}
+  .arrow{transform:rotate(90deg);height:18px}
+  .hero h1{font-size:24px}
+}
+
+</style>
+</head>
+<body>
+<header class="topbar"><span>지축역아테라 하자 합의 안내</span><span id="counter">1 / 19</span></header>
+<div class="progress"><i id="bar"></i></div>
+<main id="pager">
+<section class="slide cover" id="p1" data-title="표지"><div class="inner">
+<div class="hero">
+  <div class="hero-k">지축역아테라 입주자대표회의 · 2026년 10월</div>
+  <h1>금호건설과의<br>하자 합의서가<br><em>체결되었습니다</em></h1>
+  <p>합의서 내용과 앞으로 진행될 공사를 한 장씩 넘겨 보며 확인하실 수 있습니다.</p>
+</div>
+<div class="facts3">
+  <div><b>9월 29일</b><span>합의서 체결</span></div>
+  <div><b>9월 30일</b><span>공증</span></div>
+  <div><b>11월부터</b><span>공사 진행 계획</span></div>
+</div>
+<div class="cover-links">
+  <p class="mini">이 안내는 지난 4월 10일 안내, 7월 진행경과 안내에 이어지는 최종 안내입니다.</p>
+  <div class="linkrow">
+    <a href="https://ghqlt0116-web.github.io/supium/" target="_blank" rel="noopener">4월 합의 안내 ›</a>
+    <a href="https://ghqlt0116-web.github.io/supium/0721/" target="_blank" rel="noopener">7월 진행경과 ›</a>
+  </div>
+  <div class="btnrow"><button class="btn primary" data-pdf="agreement.pdf" data-page="1" data-title="합의서 원본"><span>📄</span>합의서 원본 보기</button></div>
+</div>
+<p class="swipehint">옆으로 넘기거나 아래 ‘다음’을 눌러 주세요 →</p>
+</div></section><section class="slide " id="p2" data-title="달라진 점 ①"><div class="inner"><div class="kicker">지난 안내와 달라진 점</div><h2>합의의 큰 틀</h2><p class="lead">4월·7월 안내와 합의서 최종 내용을 나란히 정리했습니다.</p><div class="cmp"><div class="cmp-h"><b>합의 범위</b><span class="tag amber">변경</span></div><div class="cmp-b"><div class="before"><em>이전 안내</em>4월: 사용검사 후 2·3년차 하자<br>7월: 사용검사 전 하자 포함</div><div class="arrow">›</div><div class="after"><em>합의서 최종</em>사용검사 전 하자 + 사용검사 후 2·3년차 하자<br><small>사용검사 후 5년차·10년차는 범위에서 제외</small></div></div></div><div class="cmp"><div class="cmp-h"><b>소송 종결 방식</b><span class="tag amber">변경</span></div><div class="cmp-b"><div class="before"><em>이전 안내</em>4월: 소취하<br>7월: 종결 방식 검토</div><div class="arrow">›</div><div class="after"><em>합의서 최종</em>화해권고결정(또는 조정에 갈음하는 결정)에 이의하지 않음<br><small>효력은 결정이 확정된 날부터</small></div></div></div><div class="cmp"><div class="cmp-h"><b>브랜드 표기</b><span class="tag blue">확정</span></div><div class="cmp-b"><div class="before"><em>이전 안내</em>4월: 어울림<br>7월: 아테라</div><div class="arrow">›</div><div class="after"><em>합의서 최종</em>아테라 · 영문 <b>ARTERA</b></div></div></div></div></section><section class="slide " id="p3" data-title="달라진 점 ②"><div class="inner"><div class="kicker">지난 안내와 달라진 점</div><h2>공사 항목</h2><p class="lead">합의서 별첨1에 확정된 공사 기준입니다.</p><div class="cmp"><div class="cmp-h"><b>표기물 교체</b><span class="tag teal">구체화</span></div><div class="cmp-b"><div class="before"><em>이전 안내</em>문주·외벽·엘리베이터·게시판 등 단지 내 표기물</div><div class="arrow">›</div><div class="after"><em>합의서 최종</em>문주 1 · 옥외 난간대 1 · 동 외벽 3개 동<br>단지 내 문구 707점 · 주차등록증 1,166개</div></div></div><div class="cmp"><div class="cmp-h"><b>주차</b><span class="tag amber">변경</span></div><div class="cmp-b"><div class="before"><em>이전 안내</em>4월: 잔여 대수 전광판 + LED 유도등<br>7월: 유도등 제외 검토</div><div class="arrow">›</div><div class="after"><em>합의서 최종</em>정문 입·출구 주차관제 시스템 22점<br><small>단지에 LED 주차 유도 시스템이 없어 잔여 대수 전광판은 포함하지 않음</small></div></div></div><div class="cmp"><div class="cmp-h"><b>법무법인 비용</b><span class="tag teal">확정</span></div><div class="cmp-b"><div class="before"><em>이전 안내</em>7월: 협의 중</div><div class="arrow">›</div><div class="after"><em>합의서 최종</em>별첨1에 금액이 확정 기재됨<br><small>첨부 1 참조</small></div></div></div></div></section><section class="slide " id="p3b" data-title="달라진 점 ③"><div class="inner"><div class="kicker">지난 안내와 달라진 점</div><h2>그 밖의 항목</h2><div class="cmp"><div class="cmp-h"><b>7월에 검토 중이던 항목</b><span class="tag teal">확정</span></div><div class="cmp-b"><div class="before"><em>이전 안내</em>잔디광장 · 스쿨버스존 · 헬스장 검토</div><div class="arrow">›</div><div class="after"><em>합의서 최종</em>잔디광장 · 스쿨버스 승강장 · 헬스장 기구와 스트레칭룸 공사 확정</div></div></div><div class="cmp"><div class="cmp-h"><b>커피머신</b><span class="tag amber">변경</span></div><div class="cmp-b"><div class="before"><em>이전 안내</em>4월: 무인카페형 2대<br>7월: 1대</div><div class="arrow">›</div><div class="after"><em>합의서 최종</em>커피머신 1대 + 운영에 필요한 부대 물품 구입 비용</div></div><p class="cnote">입대의는 단지에 2대까지는 필요하지 않다고 보고, 기기 2대 구입보다 1대와 운영용 부대 물품 비용을 확보하는 편이 운영 효율에 유리하다고 판단했습니다.</p></div><p class="same"><b>그대로 유지</b> 스터디룸 조성 · 게스트하우스 집기 (15종 확정)</p></div></section><section class="slide " id="p4" data-title="합의서 한눈에"><div class="inner"><div class="kicker">합의서 한눈에</div><h2>합의서 내용 요약</h2><dl class="kv"><div><dt>당사자</dt><dd>갑: 지축역아테라 입주자대표회의<br>을: 금호건설(대표사)과 공동시공사 7개사</dd></div><div><dt>합의 대상</dt><dd>사용검사 전 하자 + 사용검사 후 2·3년차 하자<br><small>5년차·10년차 하자는 제외 (2조 4항)</small></dd></div><div><dt>소송 종결</dt><dd>의정부지방법원 고양지원 2026가합50012 소송을 화해권고결정(또는 조정에 갈음하는 결정)으로 종결 (2조 6항)</dd></div><div><dt>효력 발생</dt><dd>화해권고결정(또는 조정에 갈음하는 결정)이 확정된 날부터 (5조)</dd></div><div><dt>입주민 위임장</dt><dd>합의서 체결 후 2개월 이내 제출, 1개월 연장 가능 (1조 3항)<br>전체 세대의 80% 이상 (1조 4항) <small>· 분양 소유자 389세대와 LH(행복주택 구분소유자 전체를 1건으로 판정)를 합산해 산정</small><br>제출 현황(9.28): 분양 소유자 389세대 중 324세대 (83.29%)</dd></div><div><dt>하자 보증</dt><dd>별첨1 공사의 하자보증기간은 개별공사 완료확인서 날인일부터 1년 (2조 5항)</dd></div></dl><div class="btnrow"><button class="btn primary" data-pdf="agreement.pdf" data-page="2" data-title="합의서 원본 · 본문"><span>📄</span>합의서 본문 보기</button><button class="btn" data-pdf="notice.pdf" data-page="2" data-title="상세 안내문 · 합의서 개요"><span>📎</span>상세 안내문 · 개요</button></div></div></section><section class="slide " id="p5" data-title="공사 한눈에"><div class="inner"><div class="kicker">어떤 공사가 이뤄지나</div><h2>합의서 별첨1 공사 목록</h2><p class="lead">카드를 누르면 해당 공사 설명으로 이동합니다.</p><div class="wgrid"><button class="wcard" data-go="p6"><i>첨부 1</i><b>소송비용 정산</b><span>4개 항목 정산</span></button><button class="wcard" data-go="p7"><i>첨부 2</i><b>BI(아테라) 시공</b><span>문주·난간·동 외벽 5곳</span></button><button class="wcard" data-go="p8"><i>첨부 2</i><b>단지 내 문구 · 주차등록증</b><span>707점 · 1,166개</span></button><button class="wcard" data-go="p9"><i>첨부 3</i><b>스마트룸 → 스터디룸</b><span>카펫 약 145㎡</span></button><button class="wcard" data-go="p10"><i>첨부 4</i><b>게스트하우스 · 카페</b><span>물품 15종 + 커피머신</span></button><button class="wcard" data-go="p11"><i>첨부 5</i><b>주차관제 설치</b><span>22점</span></button><button class="wcard" data-go="p12"><i>첨부 6</i><b>잔디광장 개선</b><span>130㎡ · 벤치 4세트</span></button><button class="wcard" data-go="p13"><i>첨부 7</i><b>스쿨버스 승강장</b><span>부스 1세트</span></button><button class="wcard" data-go="p14"><i>첨부 8</i><b>헬스장 · 스트레칭룸</b><span>기구 3종 · 25㎡</span></button></div><div class="callout"><b>공사는 금호건설이 제시한 계획에 따라 11월부터 진행합니다.</b><br>공사 기간은 12개월 이내이며, 개별공사 완료 후 하자보증기간은 1년입니다.</div></div></section><section class="slide " id="p6" data-title="첨부 1 소송비용 정산"><div class="inner"><div class="kicker">첨부 1 · 별첨1-1</div><h2>소송비용 정산</h2><p class="lead">소송 취하로 생기는 비용을 별첨1 목록에 따라 정산합니다. 지급처는 법무법인 선진이며 금액은 부가세 별도입니다.</p><table class="tbl"><tbody><tr><td>하자진단 비용</td><td>15,000,000원</td></tr><tr><td>채권양도양수서(동의서) 징구비용<br><small>365세대 × 7,000원</small></td><td>2,555,000원</td></tr><tr><td>인지료</td><td>3,964,500원</td></tr><tr><td>변호사 성공보수비<br><small>(추가 발생분은 아파트 부담)</small></td><td>성공보수 금액 전액</td></tr></tbody></table><p class="cnote">성공보수 금액은 합의서 별첨1 원문에서 확인할 수 있습니다.</p><div class="btnrow"><button class="btn primary" data-pdf="notice.pdf" data-page="4" data-title="상세 안내문 · 첨부 1"><span>📎</span>첨부 1 자세히 보기</button><button class="btn" data-pdf="agreement.pdf" data-page="7" data-title="합의서 원본 · 합의서 별첨1"><span>📄</span>합의서 별첨1 원문</button></div></div></section><section class="slide " id="p7" data-title="첨부 2 BI 시공"><div class="inner"><div class="kicker">첨부 2-1 · 별첨1-2</div><h2>BI(아테라) 시공 — 문주 · 옥외 난간대 · 동 외벽</h2><p class="lead">기존 BI와 ‘수피움’ 문구를 철거하고 아테라(ARTERA) BI로 다시 시공합니다.</p><div class="stats"><div class="stat"><b>1</b><span>문주 (LED 조명)</span></div><div class="stat"><b>1</b><span>옥외 난간대</span></div><div class="stat"><b>3</b><span>동 외벽<br>201·205·209동</span></div></div><dl class="kv"><div><dt>외벽 BI 면</dt><dd>각 동 291㎡ (조사보고서 측정)</dd></div><div><dt>글자 크기</dt><dd>201·205동 14,420×1,800mm<br>209동 16,000×2,000mm</dd></div></dl><figure class="fig "><img loading="lazy" data-zoom src="img/bi_gate_sign.jpg" alt="문주 사인 디자인"><figcaption>문주 사인 디자인<i> · 탭하면 크게 보기</i></figcaption></figure><div class="btnrow"><button class="btn primary" data-pdf="notice.pdf" data-page="5" data-title="상세 안내문 · 첨부 2"><span>📎</span>첨부 2 자세히 보기</button><button class="btn" data-pdf="agreement.pdf" data-page="13" data-title="합의서 원본 · 조사보고서"><span>📄</span>조사보고서 원문</button></div></div></section><section class="slide " id="p8" data-title="첨부 2 단지 내 문구"><div class="inner"><div class="kicker">첨부 2-2 · 별첨1-2</div><h2>단지 내 문구 교체와 주차등록증</h2><p class="lead">단지 안 ‘수피움’ 문구를 아테라 BI로 교체하고, 주차등록증은 새 디자인으로 제작합니다.</p><div class="stats"><div class="stat"><b>707</b><span>단지 내 문구 (점)</span></div><div class="stat"><b>1,166</b><span>주차등록증 (개)</span></div></div><div class="chips"><span>동별 게시판 19</span><span>엘리베이터 게시판 19</span><span>현관 스티커 19</span><span>단지 내 게시판 19</span><span>자동문 그래픽 48</span><span>세대 호수 사인 583</span></div><p class="cnote">주차등록증: 583세대 × 2개소 = 1,166개 (차량 등록용 주차스티커)</p><figure class="fig "><img loading="lazy" data-zoom src="img/sign_board.jpg" alt="게시판 변경 전·후 — SOOPIUM → ARTERA"><figcaption>게시판 변경 전·후 — SOOPIUM → ARTERA<i> · 탭하면 크게 보기</i></figcaption></figure><div class="btnrow"><button class="btn primary" data-pdf="notice.pdf" data-page="9" data-title="상세 안내문 · 첨부 2"><span>📎</span>첨부 2 자세히 보기</button><button class="btn" data-pdf="agreement.pdf" data-page="18" data-title="합의서 원본 · 조사보고서"><span>📄</span>조사보고서 원문</button></div></div></section><section class="slide " id="p9" data-title="첨부 3 스터디룸"><div class="inner"><div class="kicker">첨부 3 · 별첨1-3</div><h2>스마트룸 → 스터디룸 인테리어</h2><p class="lead">기존 스마트 멀티룸을 스터디룸(열람실) 형태로 인테리어합니다.</p><dl class="kv"><div><dt>합의서 표기</dt><dd>스마트룸 재구성(인테리어 공사)</dd></div><div><dt>바닥</dt><dd>카펫 설치 약 145㎡</dd></div><div><dt>가벽</dt><dd>설치 후 수성페인트 도장 마감</dd></div><div><dt>구성</dt><dd>열람용 책상 · 회의용 테이블과 의자<br>입구 루버, 천장 조명, 벽체 하단 LED (설치 예시)</dd></div></dl><figure class="fig "><img loading="lazy" data-zoom src="img/room_plan.jpg" alt="스터디룸 평면도와 설치 예시 (조사보고서)"><figcaption>스터디룸 평면도와 설치 예시 (조사보고서)<i> · 탭하면 크게 보기</i></figcaption></figure><div class="btnrow"><button class="btn primary" data-pdf="notice.pdf" data-page="12" data-title="상세 안내문 · 첨부 3"><span>📎</span>첨부 3 자세히 보기</button><button class="btn" data-pdf="agreement.pdf" data-page="31" data-title="합의서 원본 · 조사보고서"><span>📄</span>조사보고서 원문</button></div></div></section><section class="slide " id="p10" data-title="첨부 4 게스트하우스"><div class="inner"><div class="kicker">첨부 4 · 별첨1-4</div><h2>게스트하우스 · 카페</h2><p class="lead">게스트하우스에 필요한 물품 15종을 구입해 설치합니다.</p><div class="chips"><span>4인 식탁세트</span><span>65인치 TV</span><span>암막커튼</span><span>4인용 식기세트</span><span>티테이블</span><span>TV 서랍장</span><span>전기 주전자</span><span>침대</span><span>4도어 냉장고</span><span>침구세트</span><span>소파</span><span>침대협탁</span><span>카페트</span><span>안방 TV</span><span>전자레인지</span></div><div class="callout"><b>커피머신</b><br>설치 공사 대신, 커피머신 1대와 운영에 필요한 부대 물품 구입 비용으로 정리했습니다.</div><figure class="fig "><img loading="lazy" data-zoom src="img/guest_plan.jpg" alt="게스트하우스 1층 평면도 (번호 = 물품 순번)"><figcaption>게스트하우스 1층 평면도 (번호 = 물품 순번)<i> · 탭하면 크게 보기</i></figcaption></figure><div class="btnrow"><button class="btn primary" data-pdf="notice.pdf" data-page="13" data-title="상세 안내문 · 첨부 4"><span>📎</span>첨부 4 자세히 보기</button><button class="btn" data-pdf="agreement.pdf" data-page="33" data-title="합의서 원본 · 조사보고서"><span>📄</span>조사보고서 원문</button></div></div></section><section class="slide " id="p11" data-title="첨부 5 주차관제"><div class="inner"><div class="kicker">첨부 5 · 별첨1-5</div><h2>주차관제 설치</h2><p class="lead">단지 정문 입·출구에 주차관제 시스템을 설치합니다.</p><div class="stats"><div class="stat"><b>22</b><span>총 수량 (점)</span></div><div class="stat"><b>4</b><span>차량번호인식 차단기</span></div><div class="stat"><b>1</b><span>방문증 키오스크</span></div></div><div class="chips"><span>루프코일 8</span><span>수동스위치 2</span><span>VoIP폰 1</span><span>중앙관리 컴퓨터 1</span><span>모니터링 컴퓨터 1</span><span>방문예약시스템 배관배선 1</span><span>배관배선 1</span><span>토목공사 1</span><span>네트워크 장치 1</span></div><figure class="fig "><img loading="lazy" data-zoom src="img/park_sys.jpg" alt="주차관제 구성도와 정문 입·출구"><figcaption>주차관제 구성도와 정문 입·출구<i> · 탭하면 크게 보기</i></figcaption></figure><div class="btnrow"><button class="btn primary" data-pdf="notice.pdf" data-page="15" data-title="상세 안내문 · 첨부 5"><span>📎</span>첨부 5 자세히 보기</button><button class="btn" data-pdf="agreement.pdf" data-page="35" data-title="합의서 원본 · 조사보고서"><span>📄</span>조사보고서 원문</button></div></div></section><section class="slide " id="p12" data-title="첨부 6 잔디광장"><div class="inner"><div class="kicker">첨부 6 · 별첨1-6</div><h2>잔디광장 개선</h2><p class="lead">단지 내 잔디광장 구간에 고무블록을 시공하고 벤치를 설치합니다.</p><div class="stats"><div class="stat"><b>130㎡</b><span>고무블록 시공</span></div><div class="stat"><b>4세트</b><span>벤치</span></div></div><figure class="fig "><img loading="lazy" data-zoom src="img/lawn_photo.jpg" alt="현황 사진과 시공 예시 (조사보고서)"><figcaption>현황 사진과 시공 예시 (조사보고서)<i> · 탭하면 크게 보기</i></figcaption></figure><div class="btnrow"><button class="btn primary" data-pdf="notice.pdf" data-page="17" data-title="상세 안내문 · 첨부 6"><span>📎</span>첨부 6 자세히 보기</button><button class="btn" data-pdf="agreement.pdf" data-page="37" data-title="합의서 원본 · 조사보고서"><span>📄</span>조사보고서 원문</button></div></div></section><section class="slide " id="p13" data-title="첨부 7 스쿨버스 승강장"><div class="inner"><div class="kicker">첨부 7 · 별첨1-7</div><h2>스쿨버스 승강장 설치</h2><p class="lead">이동식 승강장 부스를 설치하고 전기 배선 작업을 합니다.</p><div class="stats"><div class="stat"><b>1세트</b><span>이동식 승강장 부스</span></div><div class="stat"><b>8M</b><span>전기 배선</span></div></div><dl class="kv"><div><dt>규격</dt><dd>5000×3000×3000mm</dd></div><div><dt>구성</dt><dd>슬라이딩 자동문 · 냉난방기 포함</dd></div><div><dt>도면 표기</dt><dd>기존 스쿨존, 철거 후 전기 배선 작업</dd></div></dl><figure class="fig "><img loading="lazy" data-zoom src="img/bus_ref.jpg" alt="어린이 승강장 시안과 현황 사진 (조사보고서)"><figcaption>어린이 승강장 시안과 현황 사진 (조사보고서)<i> · 탭하면 크게 보기</i></figcaption></figure><div class="btnrow"><button class="btn primary" data-pdf="notice.pdf" data-page="19" data-title="상세 안내문 · 첨부 7"><span>📎</span>첨부 7 자세히 보기</button><button class="btn" data-pdf="agreement.pdf" data-page="39" data-title="합의서 원본 · 조사보고서"><span>📄</span>조사보고서 원문</button></div></div></section><section class="slide " id="p14" data-title="첨부 8 헬스장"><div class="inner"><div class="kicker">첨부 8 · 별첨1-8</div><h2>헬스장 · 스트레칭룸</h2><p class="lead">헬스장 기구 3종을 구입하고, 스트레칭룸에 용품 구입과 바닥공사를 합니다.</p><table class="tbl"><tbody><tr><td>듀얼 멀티 케이블 머신</td><td>1 EA</td></tr><tr><td>듀얼 숄더 V 스쿼트</td><td>1 EA</td></tr><tr><td>런닝머신</td><td>1 EA</td></tr><tr><td>스트레칭 용품</td><td>13 SET</td></tr><tr><td>스트레칭룸 바닥공사 (고무매트)</td><td>25㎡</td></tr></tbody></table><p class="cnote">스트레칭룸: 벽체 2면 유리거울 설치, 바닥 고무매트 시공</p><div class="thumbs"><img loading="lazy" data-zoom src="img/x_treadmill.jpg" alt="참고 제품"><img loading="lazy" data-zoom src="img/x_cable.jpg" alt="참고 제품"><img loading="lazy" data-zoom src="img/x_press.jpg" alt="참고 제품"></div><p class="cnote">참고 제품 예시 · 모델과 세부 구성은 금호건설과의 협의에 따라 달라질 수 있습니다 · 탭하면 크게 보기</p><div class="btnrow"><button class="btn primary" data-pdf="notice.pdf" data-page="21" data-title="상세 안내문 · 첨부 8"><span>📎</span>첨부 8 자세히 보기</button><button class="btn" data-pdf="agreement.pdf" data-page="41" data-title="합의서 원본 · 조사보고서"><span>📄</span>조사보고서 원문</button></div></div></section><section class="slide " id="p15" data-title="접수건 보수 95%"><div class="inner"><div class="kicker">세대 내부 하자</div><h2>2·3년차 하자 접수건 보수</h2><div class="big95"><b>95<small>%</small></b><span>이상 처리</span><p>접수된 세대 내부 2·3년차 하자를<br>금호건설이 책임지고 보수합니다.</p></div><ol class="steps"><li><b>접수</b>LH를 통해 LH 통합 건설기술정보시스템 ‘코티스(COTIS)’에 접수된 건이 기준입니다.</li><li><b>보수</b>코티스 접수건을 기준으로 금호건설 시공 부분을 금호건설이 보수합니다.</li><li><b>결과 통보</b>보수 완료 후 입대의에 그 결과를 알립니다.</li><li><b>처리하지 못한 건</b>보수 확약서로 대체합니다.</li></ol><p class="cnote">합의서 1조 5항 · 세대 내부(전유부분) 하자는 LH를 통해 코티스에 접수하며, 금호건설은 코티스 접수건을 기준으로 95% 이상을 보수합니다.</p><div class="btnrow"><button class="btn primary" data-pdf="notice.pdf" data-page="24" data-title="상세 안내문 · 접수건 보수"><span>📎</span>상세 설명 보기</button><button class="btn" data-pdf="agreement.pdf" data-page="3" data-title="합의서 원본 · 1조 5항"><span>📄</span>합의서 1조 5항 원문</button></div></div></section><section class="slide " id="p16" data-title="앞으로의 진행"><div class="inner"><div class="kicker">앞으로의 진행</div><h2>앞으로의 순서</h2><ol class="tl"><li class="done"><i>✓</i><div><b>합의서 체결 · 공증</b><span>9월 29일 체결, 9월 30일 공증</span></div></li><li><i>1</i><div><b>입주민 위임장 제출</b><span>체결 후 2개월 이내 (1개월 연장 가능)</span></div></li><li><i>2</i><div><b>소송 종결</b><span>합의서를 법원에 제출해 화해권고결정(또는 조정에 갈음하는 결정)을 받습니다. 효력은 결정 확정일부터입니다.</span></div></li><li><i>3</i><div><b>별첨1 공사 진행</b><span>금호건설 제시 계획: 11월부터 · 공사 기간 12개월 이내</span></div></li><li><i>4</i><div><b>공사 완료</b><span>개별공사 완료확인서 날인 후 하자보증 1년, 하자보수책임 완료확인서 확인·날인</span></div></li></ol><p class="cnote">세부 일정은 확정되는 대로 안내드립니다.</p><div class="btnrow"><button class="btn primary" data-pdf="notice.pdf" data-page="25" data-title="상세 안내문 · 앞으로의 진행"><span>📎</span>상세 일정 보기</button></div></div></section><section class="slide " id="p17" data-title="합의서에 정해진 협조 사항"><div class="inner"><div class="kicker">합의서 본문</div><h2>합의서에 정해진 협조 사항</h2><p class="lead">합의서 3조·4조 중 공사와 관련된 주요 내용입니다. 전체 조항은 원문에서 볼 수 있습니다.</p><ul class="rules"><li><b>공사 협조</b>차량 통제, 공사용수, 전력 공급 등 필요한 사항에 입대의가 협력합니다.<em>3조 1항</em></li><li><b>공사 중 민원</b>입주자·사용자가 소음·먼지 등에 민원을 제기하지 않도록 하고, 금호건설은 민원이 생기지 않도록 노력합니다.<em>3조 2항</em></li><li><b>인허가</b>공사 관련 인허가 사항은 입대의가 책임집니다.<em>3조 3항</em></li><li><b>BI 사용</b>건축물대장 변경 등은 입대의의 책임과 비용으로 진행합니다.<em>4조 4항</em></li></ul><div class="btnrow"><button class="btn primary" data-pdf="notice.pdf" data-page="25" data-title="상세 안내문 · 협조 사항"><span>📎</span>상세 설명 보기</button><button class="btn" data-pdf="agreement.pdf" data-page="4" data-title="합의서 원본 · 3·4조"><span>📄</span>합의서 3·4조 원문</button></div></div></section><section class="slide " id="p18" data-title="문서 보기"><div class="inner"><div class="kicker">문서 보기</div><h2>원본과 상세 문서</h2><div class="docs"><button class="doc primary" data-pdf="agreement.pdf" data-page="1" data-title="합의서 원본"><b>📄 합의서 원본 보기</b><span>본문 · 별첨1·2 · 위임장 서식 · 조사보고서 · 공증 (44쪽)</span></button><button class="doc" data-pdf="notice.pdf" data-page="1" data-title="상세 안내문"><b>📎 상세 안내문 보기</b><span>첨부 1~8 공사별 설명 (26쪽)</span></button><a class="doc" href="https://ghqlt0116-web.github.io/supium/0721/" target="_blank" rel="noopener"><b>7월 진행경과 안내</b><span>4월 이후 3개월의 진행 과정</span></a><a class="doc" href="https://ghqlt0116-web.github.io/supium/" target="_blank" rel="noopener"><b>4월 합의 안내</b><span>지난 4월 10일 안내</span></a></div><p class="cnote">합의서 공개본은 개인정보 보호를 위해 위임장 서식의 서명란(별첨3·4)을 가렸고, 세대별 제출 여부가 표시된 위임장 제출 현황표 쪽은 제외했습니다.</p><div class="foot"><b>지축역아테라 입주자대표회의</b>문의: 관리사무소 및 입대의 공식 채널</div></div></section>
+</main>
+<nav class="bottom">
+  <button id="prev" class="nb" aria-label="이전">‹ 이전</button>
+  <button id="toc" class="nb toc" aria-label="목차">☰ <span id="curtitle">표지</span></button>
+  <button id="next" class="nb primary" aria-label="다음">다음 ›</button>
+</nav>
+
+<div id="tocsheet" class="sheet" hidden>
+  <div class="sheet-card"><div class="sheet-h"><b>목차</b><button id="tocclose" class="x">닫기</button></div>
+  <ol id="toclist"></ol></div>
+</div>
+
+<div id="viewer" class="viewer" hidden>
+  <div class="v-top">
+    <button id="vclose" class="x">닫기</button>
+    <b id="vtitle"></b>
+    <a id="vopen" href="#" target="_blank" rel="noopener" class="x">새 탭</a>
+  </div>
+  <div class="v-tools">
+    <button id="vprev">‹</button>
+    <span><input id="vpage" type="number" min="1" value="1" inputmode="numeric"> / <span id="vtotal">1</span></span>
+    <button id="vnext">›</button>
+    <i></i>
+    <button id="vzout">−</button><button id="vzin">＋</button>
+  </div>
+  <div id="vbody" class="v-body"></div>
+</div>
+
+<div id="lb" class="lb" hidden><button class="x" id="lbclose">닫기</button><div class="lb-scroll"><img id="lbimg" alt=""></div><p>이미지를 탭하면 확대/축소됩니다</p></div>
+
+<script src="lib/pdf.min.js"></script>
+<script>
+(function () {
+  'use strict';
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var pager = $('#pager');
+  var slides = Array.prototype.slice.call(pager.children);
+  var N = slides.length;
+  var idx = 0;
+  var overlayOpen = function () { return !$('#viewer').hidden || !$('#lb').hidden || !$('#tocsheet').hidden; };
+
+  function go(i, smooth) {
+    i = Math.max(0, Math.min(N - 1, i));
+    pager.scrollTo({ left: i * pager.clientWidth, behavior: smooth === false ? 'auto' : 'smooth' });
+  }
+
+  function ui() {
+    $('#counter').textContent = (idx + 1) + ' / ' + N;
+    $('#bar').style.width = ((idx + 1) / N * 100) + '%';
+    $('#prev').disabled = idx === 0;
+    $('#next').disabled = idx === N - 1;
+    $('#curtitle').textContent = slides[idx].getAttribute('data-title');
+    try { history.replaceState(null, '', '#' + slides[idx].id); } catch (e) {}
+    var items = document.querySelectorAll('#toclist li');
+    for (var k = 0; k < items.length; k++) items[k].className = k === idx ? 'on' : '';
+  }
+
+  var t = null;
+  pager.addEventListener('scroll', function () {
+    if (t) cancelAnimationFrame(t);
+    t = requestAnimationFrame(function () {
+      var n = Math.round(pager.scrollLeft / pager.clientWidth);
+      if (n !== idx) { idx = n; ui(); }
+    });
+  }, { passive: true });
+
+  $('#prev').onclick = function () { go(idx - 1); };
+  $('#next').onclick = function () { go(idx + 1); };
+  window.addEventListener('resize', function () { go(idx, false); });
+  document.addEventListener('keydown', function (e) {
+    if (overlayOpen()) { if (e.key === 'Escape') closeAll(); return; }
+    if (e.key === 'ArrowRight') go(idx + 1);
+    if (e.key === 'ArrowLeft') go(idx - 1);
+  });
+
+  // 목차
+  var list = $('#toclist');
+  slides.forEach(function (s, i) {
+    var li = document.createElement('li');
+    li.innerHTML = '<button><i>' + (i + 1) + '</i>' + s.getAttribute('data-title') + '</button>';
+    li.firstChild.onclick = function () { $('#tocsheet').hidden = true; go(i); };
+    list.appendChild(li);
+  });
+  $('#toc').onclick = function () { $('#tocsheet').hidden = false; };
+  $('#tocclose').onclick = function () { $('#tocsheet').hidden = true; };
+  $('#tocsheet').addEventListener('click', function (e) { if (e.target === this) this.hidden = true; });
+
+  // 카드 이동
+  document.addEventListener('click', function (e) {
+    var g = e.target.closest('[data-go]');
+    if (g) {
+      var el = document.getElementById(g.getAttribute('data-go'));
+      go(slides.indexOf(el));
+    }
+  });
+
+  // 이미지 확대
+  var lb = $('#lb'), lbimg = $('#lbimg');
+  document.addEventListener('click', function (e) {
+    var im = e.target.closest('img[data-zoom]');
+    if (im) { lbimg.src = im.src; lb.classList.remove('zoom'); lb.hidden = false; }
+  });
+  lbimg.onclick = function () { lb.classList.toggle('zoom'); };
+  $('#lbclose').onclick = function () { lb.hidden = true; };
+
+  // PDF 뷰어
+  var viewer = $('#viewer'), vbody = $('#vbody');
+  var pdfjsLib = window['pdfjs-dist/build/pdf'];
+  var state = { url: null, doc: null, pages: [], zoom: 1, cur: 1 };
+  if (pdfjsLib) pdfjsLib.GlobalWorkerOptions.workerSrc = 'lib/pdf.worker.min.js';
+  var io = null;
+
+  function closeAll() {
+    viewer.hidden = true; lb.hidden = true; $('#tocsheet').hidden = true;
+  }
+  $('#vclose').onclick = function () { viewer.hidden = true; };
+
+  function renderPage(vp) {
+    var n = +vp.getAttribute('data-n');
+    var w = Math.min(2200, Math.round(vp.clientWidth * Math.min(window.devicePixelRatio || 1, 2)));
+    if (vp._w === w) return;
+    vp._w = w;
+    state.doc.getPage(n).then(function (page) {
+      var base = page.getViewport({ scale: 1 });
+      var scale = w / base.width;
+      var v = page.getViewport({ scale: scale });
+      var c = vp.querySelector('canvas');
+      c.width = Math.round(v.width); c.height = Math.round(v.height);
+      page.render({ canvasContext: c.getContext('2d'), viewport: v });
+    });
+  }
+  function releasePage(vp) {
+    var c = vp.querySelector('canvas');
+    c.width = 1; c.height = 1; vp._w = 0;
+  }
+
+  function buildViewer(doc, startPage) {
+    vbody.innerHTML = '';
+    state.doc = doc; state.zoom = 1; vbody.style.setProperty('--z', 1);
+    $('#vtotal').textContent = doc.numPages;
+    $('#vpage').max = doc.numPages;
+    if (io) io.disconnect();
+    io = new IntersectionObserver(function (ents) {
+      ents.forEach(function (en) {
+        if (en.isIntersecting) renderPage(en.target); else releasePage(en.target);
+      });
+    }, { root: vbody, rootMargin: '120% 0px' });
+    var proms = [];
+    for (var i = 1; i <= doc.numPages; i++) proms.push(doc.getPage(i));
+    Promise.all(proms).then(function (pages) {
+      pages.forEach(function (p, k) {
+        var vw = p.getViewport({ scale: 1 });
+        var d = document.createElement('div');
+        d.className = 'vp'; d.setAttribute('data-n', k + 1);
+        d.style.aspectRatio = vw.width + ' / ' + vw.height;
+        d.innerHTML = '<canvas></canvas>';
+        vbody.appendChild(d);
+        io.observe(d);
+      });
+      jump(startPage, false);
+      setTimeout(function () { jump(startPage, false); }, 250);
+      setTimeout(function () { jump(startPage, false); }, 900);
+    });
+  }
+
+  function jump(n, smooth) {
+    n = Math.max(1, Math.min(state.doc.numPages, n || 1));
+    var el = vbody.querySelector('[data-n="' + n + '"]');
+    if (el) vbody.scrollTo({ top: el.offsetTop - 10, behavior: smooth === false ? 'auto' : 'smooth' });
+    state.cur = n; $('#vpage').value = n;
+  }
+
+  vbody.addEventListener('scroll', function () {
+    var els = vbody.children, mid = vbody.scrollTop + vbody.clientHeight * 0.35;
+    for (var i = 0; i < els.length; i++) {
+      if (els[i].offsetTop + els[i].offsetHeight > mid) { state.cur = i + 1; $('#vpage').value = i + 1; break; }
+    }
+  }, { passive: true });
+
+  $('#vprev').onclick = function () { jump(state.cur - 1); };
+  $('#vnext').onclick = function () { jump(state.cur + 1); };
+  $('#vpage').onchange = function () { jump(+this.value); };
+  function zoom(f) {
+    state.zoom = Math.max(1, Math.min(3, state.zoom + f));
+    vbody.style.setProperty('--z', state.zoom);
+    Array.prototype.forEach.call(vbody.children, function (vp) { vp._w = 0; });
+    var els = vbody.querySelectorAll('.vp'), top = vbody.scrollTop, h = vbody.clientHeight;
+    Array.prototype.forEach.call(els, function (vp) {
+      var r = vp.getBoundingClientRect(), br = vbody.getBoundingClientRect();
+      if (r.bottom > br.top - h && r.top < br.bottom + h) renderPage(vp);
+    });
+    jump(state.cur, false);
+  }
+  $('#vzin').onclick = function () { zoom(0.5); };
+  $('#vzout').onclick = function () { zoom(-0.5); };
+
+  function openPdf(url, page, title) {
+    $('#vtitle').textContent = title || '';
+    $('#vopen').href = url + '#page=' + page;
+    viewer.hidden = false;
+    if (!pdfjsLib) { window.open(url + '#page=' + page, '_blank'); viewer.hidden = true; return; }
+    if (state.url === url && state.doc) { jump(page, false); return; }
+    vbody.innerHTML = '<div class="loading">문서를 불러오는 중입니다…</div>';
+    pdfjsLib.getDocument(url).promise.then(function (doc) {
+      state.url = url;
+      buildViewer(doc, page);
+    }).catch(function () {
+      viewer.hidden = true;
+      window.open(url + '#page=' + page, '_blank');
+    });
+  }
+
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-pdf]');
+    if (b) openPdf(b.getAttribute('data-pdf'), +b.getAttribute('data-page') || 1, b.getAttribute('data-title'));
+  });
+
+  // 시작 위치
+  var h = (location.hash || '').replace('#', '');
+  var start = h ? slides.findIndex(function (s) { return s.id === h; }) : 0;
+  if (start > 0) { idx = start; go(start, false); }
+  ui();
+})();
+
+</script>
+</body>
+</html>
